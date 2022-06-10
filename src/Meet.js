@@ -96,6 +96,8 @@ async function initpeerwithstream(initiator,sign){
         if(convalue){
             let scre=await navigator.mediaDevices.getDisplayMedia({video: true,audio:true})
             isshare=true
+            let ele=document.getElementById('videoview')
+            ele.muted=true;
             setVidS(scre)
             sts.push(scre)
         }
