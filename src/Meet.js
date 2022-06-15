@@ -122,7 +122,7 @@ function BottomPanal(){
         </IconButton>
         <IconButton size="large" color="primary"
         onClick={()=>{
-            if(video){
+            if(sshare){
                 stopShare(setShare)
             }else{
                 startShare(setShare)
