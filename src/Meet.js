@@ -16,7 +16,7 @@ async function getHostname(){
     hostname=prompt('Ip address:')
     let res=''
     try{
-    let re=await fetch('http://'+hostname+'/nettest')
+    let re=await fetch('http://'+hostname+':3000/nettest')
     res=await re.text()
     }catch(e){}
     if(res!='ok'){
